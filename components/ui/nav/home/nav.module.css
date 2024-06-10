@@ -1,0 +1,85 @@
+.link {
+    font-family: 'Pilat Wide Black';
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s;
+    &:hover{
+        color: white;
+    }
+}
+
+.nav{
+    grid-area: primaryNav;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.list {
+    font-size: "Pilat Wide Black";
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    height: 40px;
+    list-style-type: none;
+    &>li {
+        transition: all 0.2s;
+        border-bottom: 1px black solid;
+        &:hover {
+            border-bottom: 1px white solid;
+            color: white;
+            
+        }
+    }
+.navLink{
+    transition: all 0.2s;
+    &:hover {
+        color: white;
+        
+    }
+}
+    @media only screen and (max-width: 600px) {
+        gap: 10px;
+        padding-top: 20px;
+        justify-self: center;
+        height: 30px;
+    } 
+}
+
+.list li[border=none]{
+    border: none;
+}
+
+.list >li>a {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 900;
+    position: relative;
+    line-height: 180%;
+    font-size: 20px;
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+    } 
+}
+
+
+.black{
+    color:black;
+}
+
+.separate{
+    margin: 40px;
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+    height: 28px;
+    width: 22px;
+    margin-left: 20px;
+    transition: all 0.2s;
+    }
+  .button:hover{
+        color: white;
+      }
+  
