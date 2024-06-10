@@ -11,14 +11,6 @@
   <br>
 </h1>
 
-<p align="center">
-  <a href="https://unity.com/">
-    <img src="https://img.shields.io/badge/Unity-2019.4%2B-brightgreen" alt="Unity">
-  </a>
-  <a href="https://docs.unity3d.com/2019.4/Documentation/Manual/dotnetProfileSupport.html">
-    <img src="https://img.shields.io/badge/.NET-4.x-blue">
-  </a>
-</p>
 
 ## <samp>Configuracion</samp>
 
