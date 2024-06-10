@@ -8,7 +8,6 @@ export function useToggle(){
     
     function switchToggle(){
         setToggle(!toggle)
-        console.log(toggle);
     }
 
     return[toggle, switchToggle]
