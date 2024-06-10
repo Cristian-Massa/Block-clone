@@ -6,7 +6,6 @@ export default function InfiniteCarrousel({ text }) {
     for (let i = 0; i <= 8; i++) {
         arr.push(text)
     }
-    console.log(arr);
     return (
         <div className={`${styles.container}`}>
             <div className={`${styles.wrapper}`}>
