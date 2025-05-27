@@ -1,16 +1,17 @@
-
-
-.body{
+.body {
+  background: #ee0979;
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+  background: linear-gradient(to right, #ff6a00, #ee0979);
   display: grid;
   padding: 24px;
   grid-gap: 24px;
   grid-template-rows: min-content min-content auto min-content min-content;
   grid-template-areas:
-        "player"
-        "primaryNav"
-        "."
-        "secondaryNav"
-        "legal";
+    "player"
+    "primaryNav"
+    "."
+    "secondaryNav"
+    "legal";
   width: 100vw;
   grid-template-columns: auto;
 
@@ -20,49 +21,69 @@
     grid-template-columns: max-content auto max-content;
     grid-template-rows: min-content auto min-content;
     grid-template-areas:
-    "player       . primaryNav" 
-    ".            . .         " 
-    "secondaryNav . legal     ";
-}
-@media (max-width: 800px) {
-  
-  justify-items: center;
-}
+      "player       . primaryNav"
+      ".            . .         "
+      "secondaryNav . legal     ";
+  }
+  @media (max-width: 800px) {
+    justify-items: center;
+  }
 }
 
-.secondaryNav{
+.center {
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.white {
+  transition: all 0.2s;
+}
+
+.white:hover {
+  background-color: white;
+}
+
+.no_styles {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.secondaryNav {
   display: flex;
   flex-direction: column;
   justify-self: start;
   grid-area: secondaryNav;
   z-index: 1;
-
+}
+@media (min-width: 800px) {
+  .secondaryNav {
+    flex-direction: row;
   }
-    @media (min-width: 800px) {
-      .secondaryNav{
-        flex-direction: row;
-      }
-      .secondaryNav > div{
-        padding-left: 20px;
-      }
+  .secondaryNav > div {
+    padding-left: 20px;
   }
-
-.secondaryNav > div > nav{
-  margin-left: 0;
-  padding-top: 0;
-
 }
 
-.legal{
+.secondaryNav > div > nav {
+  margin-left: 0;
+  padding-top: 0;
+}
+
+.legal {
   grid-area: legal;
   justify-self: end;
   align-self: end;
   z-index: 1;
 }
 
-
-.layout{
-  position: absolute; 
+.layout {
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;

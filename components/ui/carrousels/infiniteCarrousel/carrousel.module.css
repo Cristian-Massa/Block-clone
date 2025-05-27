@@ -1,38 +1,36 @@
 @keyframes carrouselAnimation {
-    to {
-        translate: calc(-300px * 2);
-    }
+  to {
+    translate: calc(-300px * 2);
+  }
 }
 
-
-
 .carrousel {
-    list-style-type: none;
-    width: 300px;
-    font-size: 12px;
+  list-style-type: none;
+  width: 300px;
+  font-size: 12px;
 }
 
 .container {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 10px;
-    z-index: 1;
-    height: 50px;
-    border-bottom: 1px solid black;
-    /* Estilo del borde inferior */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 10px;
+  z-index: 1;
+  height: 50px;
+  border-bottom: 1px solid black;
+  /* Estilo del borde inferior */
 }
 
 .wrapper {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 300px;
-    z-index: 2;
-    animation: 20s infinite linear carrouselAnimation;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px;
+  z-index: 2;
+  animation: 20s infinite linear carrouselAnimation;
 
-    &:hover {
-        animation-play-state: paused;
-    }
+  &:hover {
+    animation-play-state: paused;
+  }
 }
